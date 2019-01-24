@@ -64,3 +64,26 @@ class ProjectManager extends Instructor {
     return `${this.name} has begun sprint challenge on ${subject}`;
   }
 }
+
+const fred = new Instructor({
+  name: 'Fred',
+  location: 'Bedrock',
+  age: 37,
+  gender: 'male',
+  faveLanguage: 'JavaScript',
+  specialty: 'Front-end',
+  catchPhrase: `OOOH YEAH`
+});
+
+const Jill = new ProjectManager({
+  name: 'Jill',
+  location: 'Jamcity',
+  age: 25,
+  gender: 'female',
+  faveLanguage: 'Java',
+  specialty: 'Front-end',
+  catchPhrase: `Don't forget the homies`,
+  favSubjects: ['Design', 'HTML', 'CSS', 'LESS'],
+  favInstructor: 'Josh Knell',
+  gradClassName: 'Web_16'
+});
