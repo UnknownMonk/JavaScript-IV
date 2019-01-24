@@ -97,3 +97,37 @@ const Jonas = new Students({
   className: 'web_17',
   favSubjects: ['Design', 'HTML', 'CSS', 'LESS']
 });
+
+console.log(fred.name);
+console.log(fred.age);
+console.log(fred.location);
+console.log(fred.gender);
+console.log(fred.specialty);
+console.log(fred.faveLanguage);
+console.log(fred.catchPhrase);
+console.log(Jill.name);
+console.log(Jill.age);
+console.log(Jill.location);
+console.log(Jill.gender);
+console.log(Jill.specialty);
+console.log(Jill.faveLanguage);
+console.log(Jill.catchPhrase);
+console.log(Jill.gradClassName);
+console.log(Jill.favInstructor);
+console.log(Jonas.name);
+console.log(Jonas.age);
+console.log(Jonas.location);
+console.log(Jonas.gender);
+console.log(Jonas.previousBackground);
+console.log(Jonas.className);
+console.log(Jonas.favSubjects);
+console.log(fred.speak());
+console.log(Jill.speak());
+console.log(Jonas.speak());
+console.log(fred.demo('Javascript'));
+console.log(fred.grade(Jonas, 'Javascript'));
+console.log(Jill.standUp('#getsome'));
+console.log(Jill.debugsCode(Jonas, 'Javascript'));
+console.log(Jonas.listSubjects());
+console.log(Jonas.PRAssignment('Javascript'));
+console.log(Jill.sprintChallenge('LESS'));
