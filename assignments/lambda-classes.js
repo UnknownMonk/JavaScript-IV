@@ -87,3 +87,13 @@ const Jill = new ProjectManager({
   favInstructor: 'Josh Knell',
   gradClassName: 'Web_16'
 });
+
+const Jonas = new Students({
+  name: 'Jonas',
+  age: '37',
+  location: 'Florida',
+  gender: 'male',
+  previousBackground: 'Bartender',
+  className: 'web_17',
+  favSubjects: ['Design', 'HTML', 'CSS', 'LESS']
+});
