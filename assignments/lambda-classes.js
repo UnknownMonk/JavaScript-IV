@@ -29,8 +29,10 @@ class Instructor extends Person {
   }
 
   studentGrade(student) {
-    const projectGrade = Math.floor(Math.random() * 10 - 15);
+    const projectGrade = Math.floor(Math.random() * (-50 - 50));
+
     let newStudentGrade = student.grade + projectGrade;
+    newStudentGrade;
     return newStudentGrade;
   }
 }
@@ -49,6 +51,18 @@ class Students extends Person {
 
   PRAssignment(subject) {
     return `${this.name} has submitted a PR for ${subject}.`;
+  }
+
+  graduate() {
+    if (this.grade > 70) {
+      return `Student by the name of ${this.name}'s grade is ${
+        this.grade
+      }% not bad ${this.name} may move on the the next round `;
+    } else {
+      return `Sorry but ${this.name}'s grade is ${
+        this.grade
+      } and that is not enough to pass`;
+    }
   }
 }
 
@@ -139,4 +153,5 @@ console.log(Jill.debugsCode(Jonas, 'Javascript'));
 console.log(Jonas.listSubjects());
 console.log(Jonas.PRAssignment('Javascript'));
 console.log(Jill.sprintChallenge('LESS'));
-console.log(Jill.studentGrade(Jonas));
+console.log((Jonas.grade = Jill.studentGrade(Jonas)));
+console.log(Jonas.graduate());
