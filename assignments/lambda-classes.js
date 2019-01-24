@@ -27,6 +27,12 @@ class Instructor extends Person {
   grade(student, subject) {
     return `${student.name} receives a perfect score on ${subject}.`;
   }
+
+  studentGrade(student) {
+    const projectGrade = Math.floor(Math.random() * 10 - 15);
+    let newStudentGrade = student.grade + projectGrade;
+    return newStudentGrade;
+  }
 }
 
 class Students extends Person {
@@ -35,6 +41,7 @@ class Students extends Person {
     this.previousBackground = studentAttr.previousBackground;
     this.className = studentAttr.className;
     this.favSubjects = studentAttr.favSubjects;
+    this.grade = studentAttr.grade;
   }
   listSubjects() {
     return `${this.favSubjects}`;
@@ -95,7 +102,8 @@ const Jonas = new Students({
   gender: 'male',
   previousBackground: 'Bartender',
   className: 'web_17',
-  favSubjects: ['Design', 'HTML', 'CSS', 'LESS']
+  favSubjects: ['Design', 'HTML', 'CSS', 'LESS'],
+  grade: 100
 });
 
 console.log(fred.name);
@@ -131,3 +139,4 @@ console.log(Jill.debugsCode(Jonas, 'Javascript'));
 console.log(Jonas.listSubjects());
 console.log(Jonas.PRAssignment('Javascript'));
 console.log(Jill.sprintChallenge('LESS'));
+console.log(Jill.studentGrade(Jonas));
